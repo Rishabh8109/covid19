@@ -1,0 +1,166 @@
+@import "https://fonts.googleapis.com/css2?family=Arvo&display=swap";
+
+* {
+    box-sizing: border-box;
+   
+}
+
+body {
+      margin: 0;
+      padding: 0;
+}
+
+
+.contaner-fluid {
+     height: initial;
+}
+
+  .text-content {
+       margin:10em;
+  }
+  .text-content p {
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-weight: bold;
+     font-size: 3em;
+     width: 400px;
+     letter-spacing: 2px;
+}
+
+img  {
+  margin-top: 3em;
+  width: 100vh;
+ 
+}
+h3 {
+     font-weight: bolder;
+     color: rgb(74, 72, 72);
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* 
+#artical-2 {
+     background-color: rgba(137, 27, 255, 0.585);
+} */
+
+#artical{
+    background-color: rgba(223, 173, 181, 0.177);
+}
+.navbar-brand {
+      letter-spacing: 3px;
+      font-weight: bold;
+     
+}
+
+svg {
+     color: red;
+}
+
+.span-svg {
+     animation: rotation 10s linear infinite;
+}
+.svg1 {
+      opacity: .1;
+      animation: rotation 10s linear infinite;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+}
+
+.svg2 {
+      opacity: .1;
+      animation: rotation 10s linear infinite;
+      position: absolute;
+      top: 40px;
+      right: 40px;
+}
+
+.svg3 {
+      opacity: .1;
+      animation: rotation 10s linear infinite;
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+}
+
+.svg4 {
+      opacity: .1;
+      animation: rotation 10s linear infinite;
+      position: absolute;
+      bottom: 100px;
+      right: 100px;
+}
+
+
+
+@keyframes rotation {
+     from {
+           transform: rotate(0deg);
+     }
+     to {
+           transform: rotate(360deg);
+     }
+}
+
+
+
+#cases p {
+      font-family: 'Arvo' , sans-serif;
+      padding-top: 20px;
+}
+
+th , td {
+      font-family: 'Arvo' , sans-serif;
+   
+}
+
+@media (max-width:600px) {
+     
+      body {
+            margin: 0;
+            padding: 0;
+            width:100%;
+      }
+      
+      .text-content {
+            transform: translateX(-90px);
+            
+
+      }
+      .text-content p {
+             font-size: 35px;
+             width: 250px;
+      }
+      .smooth2 {
+            transform: translateX(-10px);
+            width: 500px;
+      }
+      .card {
+          padding: 0;
+            box-shadow: none;
+            border-bottom: none;
+            width: 100%;
+      }
+      .table-responsive {
+        
+             font-size: 13px;
+             width: 100%;
+      }
+
+      .col-sm-6 {
+             width: 100%;
+      }
+
+      img {
+            transform: translateX(-60px);
+      }
+
+      canvas {
+             width: 100%;
+      }
+  .artical-2 {
+         width: 100%;
+  }
+
+  
+     
+     
+}
