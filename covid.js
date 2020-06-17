@@ -274,8 +274,7 @@
                var ActiveData = [];
                var RecoverData = [];
                var DeathData = [];
-               
-                    let stateVal = sel.value;   
+               let stateVal = sel.value;   
                     
                
           
