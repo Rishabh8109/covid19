@@ -177,7 +177,7 @@
                }
           
 
-          
+               Chart.defaults.global.defaultFontSize = 10;
                var linechart = new Chart(myChart , {
                     type : 'bar',
                     data : data,
