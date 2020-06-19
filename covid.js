@@ -185,7 +185,9 @@
                          animation : {
                               duration : 3000,
                               easing : 'easeInOutQuad'
-                         }
+                         },
+                        responsive : true,
+                        maintainAspectRatio : false
                     }
                });
 
