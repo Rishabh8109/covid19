@@ -86,7 +86,8 @@
                               borderWidth : 3,
                               fill : false,
                               lineTension: 0,
-                              pointRadius : 2
+                              pointRadius : 1,
+                              spanGaps : true
                          },
                          {
                               label : "Active",
@@ -176,8 +177,10 @@
                     ]
                }
           
-
-               Chart.defaults.global.defaultFontSize = 10;
+               Chart.defaults.global.defaultFontSize = 7;
+               Chart.defaults.global.defaultFontColor = "black";
+               Chart.defaults.line.spanGaps = true
+          
                var linechart = new Chart(myChart , {
                     type : 'bar',
                     data : data,
@@ -185,9 +188,9 @@
                          animation : {
                               duration : 3000,
                               easing : 'easeInOutQuad'
-                         },
-                        responsive : true,
-                        maintainAspectRatio : false
+                         } , 
+                         responsive : true,
+                         maintainAspectRatio : false
                     }
                });
 
@@ -198,9 +201,17 @@
                          animation : {
                               duration : 3000,
                               easing : 'easeInOutQuad'
-                         },
-                       responsive : true,
-                        maintainAspectRatio : false
+                         }, 
+                         responsive : true,
+                         maintainAspectRatio : false,
+                         layout: {
+                              padding: {
+                                  left: 50,
+                                  right: 0,
+                                  top: 0,
+                                  bottom: 0
+                              }
+                          }
                     }
                });
 
@@ -313,6 +324,10 @@
                     var linechart3 = new Chart(myChart_1 , {
                     type : 'line',
                     data : data3,
+                    options : {
+                         responsive : true,
+                         maintainAspectRatio : false
+                    }
                     
                });
 
@@ -337,9 +352,10 @@
                     var linechart4 = new Chart(myChart_2 , {
                     type : 'line',
                     data : Data2,
-                      options : {  responsive : true,
-                                   maintainAspectRatio : false
-                                }
+                    options : {
+                         responsive : true,
+                         maintainAspectRatio : false
+                    }
                     
                });
 
@@ -362,7 +378,10 @@
                var linechart5 = new Chart(myChart_3 , {
                     type : 'line',
                     data : Data3,
-                 
+                    options : {
+                         responsive : true,
+                         maintainAspectRatio : false
+                    }
                     
                });
                
@@ -385,9 +404,10 @@
                var linechart6 = new Chart(myChart_4 , {
                type : 'line',
                data : Data4,
-                  options : {  responsive : true,
-                                   maintainAspectRatio : false
-                                }
+               options : {
+                    responsive : true,
+                    maintainAspectRatio : true
+               }
                
           });
           });
@@ -425,9 +445,10 @@
                var linechart3 = new Chart(myChart_1 , {
                     type : 'line',
                     data : Data,
-                  options : {  responsive : true,
-                                   maintainAspectRatio : false
-                                }
+                    options : {
+                         responsive : true,
+                         maintainAspectRatio : false
+                    }
                     
                });
 
@@ -452,9 +473,10 @@
                var linechart4 = new Chart(myChart_2 , {
                     type : 'line',
                     data : Data2,
-                  options : {  responsive : true,
-                                   maintainAspectRatio : false
-                                }
+                    options : {
+                         responsive : true,
+                         maintainAspectRatio : false
+                    }
                     
                });
 
@@ -476,9 +498,10 @@
                var linechart5 = new Chart(myChart_3 , {
                     type : 'line',
                     data : Data3,
-                  options : {  responsive : true,
-                                   maintainAspectRatio : false
-                                }
+                    options : {
+                         responsive : true,
+                         maintainAspectRatio : false
+                    }
                     
                });
 
@@ -504,13 +527,14 @@
                var linechart6 = new Chart(myChart_4 , {
                     type : 'line',
                     data : Data4,
-                  options : {  responsive : true,
-                                   maintainAspectRatio : false
-                                }
+                    options : {
+                         responsive : true,
+                         maintainAspectRatio : false
+                    }
                     
                });
           }
 
 
 
-        
+  
