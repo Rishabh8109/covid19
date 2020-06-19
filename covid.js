@@ -198,7 +198,9 @@
                          animation : {
                               duration : 3000,
                               easing : 'easeInOutQuad'
-                         }
+                         },
+                       responsive : true,
+                        maintainAspectRatio : false
                     }
                });
 
@@ -335,6 +337,9 @@
                     var linechart4 = new Chart(myChart_2 , {
                     type : 'line',
                     data : Data2,
+                      options : {  responsive : true,
+                                   maintainAspectRatio : false
+                                }
                     
                });
 
@@ -357,6 +362,7 @@
                var linechart5 = new Chart(myChart_3 , {
                     type : 'line',
                     data : Data3,
+                 
                     
                });
                
@@ -379,6 +385,9 @@
                var linechart6 = new Chart(myChart_4 , {
                type : 'line',
                data : Data4,
+                  options : {  responsive : true,
+                                   maintainAspectRatio : false
+                                }
                
           });
           });
@@ -416,6 +425,9 @@
                var linechart3 = new Chart(myChart_1 , {
                     type : 'line',
                     data : Data,
+                  options : {  responsive : true,
+                                   maintainAspectRatio : false
+                                }
                     
                });
 
@@ -440,6 +452,9 @@
                var linechart4 = new Chart(myChart_2 , {
                     type : 'line',
                     data : Data2,
+                  options : {  responsive : true,
+                                   maintainAspectRatio : false
+                                }
                     
                });
 
@@ -461,6 +476,9 @@
                var linechart5 = new Chart(myChart_3 , {
                     type : 'line',
                     data : Data3,
+                  options : {  responsive : true,
+                                   maintainAspectRatio : false
+                                }
                     
                });
 
@@ -486,12 +504,13 @@
                var linechart6 = new Chart(myChart_4 , {
                     type : 'line',
                     data : Data4,
+                  options : {  responsive : true,
+                                   maintainAspectRatio : false
+                                }
                     
                });
           }
 
 
 
-          // india map 
-          var map=new MapmyIndia.Map("map",{ center:[28.61, 77.23], zoomControl: true, hybrid:true, search:true, location:true});
-          L.marker([28.61, 77.23]).addTo(map);
+        
